@@ -1,0 +1,112 @@
+:root {
+
+    --base-spacing-unit: 24px;
+    --half-spacing-unit: $base-spacing-unit / 2;
+
+    --color-alpha: #707272;
+    --color-form-highlight: #EEEEEE;
+
+}
+
+body{
+    overflow: hidden;
+}
+.users-container{
+    position: relative;
+    left: 22%;
+    width: 50vw;
+    height: 60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+.add-user{
+    width: 80vw;
+    position: relative;
+    top: 30%;
+    left: 29%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.add-user input{
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.add-user select{
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    top: 20%;
+}
+th {
+    text-align: left;
+    color: #fff;
+    width: 25%;
+    background: #252424;
+    padding: calc(var(--half-spacing-unit) * 1.5) 0;
+}
+
+tr {
+    display: flex;
+    width: 100%;
+    padding: calc(var(--half-spacing-unit) * 1.5) 0;
+    background: var(--color-form-highlight);
+
+    &:nth-of-type(odd) {
+        background: var(--color-alpha);
+    }
+}
+
+td{
+    width: 25%;
+}
+
+.guzik {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem; 
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.guzik:hover,
+.guzik:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.guzik:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}

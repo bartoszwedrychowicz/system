@@ -13,6 +13,10 @@
   --color: #fff;
 }
 
+.error {
+  color: white;
+  text-shadow: -1px 0 crimson, 0 1px crimson, 1px 0 crimson, 0 -1px crimson;
+}
 
 body {
   width: 100vw;

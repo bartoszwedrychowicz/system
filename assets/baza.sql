@@ -2,12 +2,13 @@ CREATE TABLE `uzytkownicy`
 (
  `idElektronika` int NOT NULL AUTO_INCREMENT ,
  `nazwa`         varchar(45) NOT NULL ,
- `haslo`         varchar(45) NOT NULL ,
+ `haslo`         varchar(255) NOT NULL ,
  `uprawnienia`   enum('admin','elektronik') NOT NULL ,
- `czyPracuje`    boolean NOT NULL ,
 
 PRIMARY KEY (`idElektronika`)
 );
+INSERT INTO `uzytkownicy` (`idElektronika`, `nazwa`,'haslo','uprawnienia') VALUES (NULL, 'admin',' $2y$10$S8pTZ3Bo9y4/JxFxwiKWjOKMGSetmq8/UA3SnwoFn1GmaQYXz6iaK','admin');
+
 
 
 CREATE TABLE `statusZlecenia`

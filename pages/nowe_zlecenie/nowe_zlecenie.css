@@ -1,0 +1,123 @@
+.form-container {
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container form {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 5vw;
+}
+
+button[type="submit"] {
+    position: relative;
+    top: 90%;
+    left: 5vw;
+    font: inherit;
+    background-color: #f0f0f0;
+    border: 0;
+    color: #242424;
+    border-radius: 0.5em;
+    font-size: 1.35rem;
+    padding: 0.375em 1em;
+    font-weight: 600;
+    text-shadow: 0 0.0625em 0 #fff;
+    transition: 0.15s ease;
+    cursor: pointer;
+
+}
+
+button[type="submit"]:active {
+    translate: 0 0.225em;
+}
+
+.group-one {
+    display: flex;
+}
+
+::placeholder {
+    position: relative;
+}
+
+.group-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-three {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 8vh;
+}
+
+input[type="tel"] {
+    margin-bottom: 0;
+    height: 18%;
+}
+
+input[type="text"] {
+    height: 26%;
+}
+
+textarea,
+button,
+input,
+select {
+    background-color: #fff;
+    width: 20vw;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    color: black;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: larger;
+}
+
+select {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+
+
+
+label {
+    margin: 0;
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+textarea[name="firma"] {
+    height: 31vh;
+}
+
+textarea[name="urzadzenie"] {
+    height: 50%;
+}
+
+textarea {
+    resize: none;
+}
