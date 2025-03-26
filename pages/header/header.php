@@ -7,16 +7,14 @@
     }
 
     if ($_SESSION['uprawnienia'] != 'admin') {
-        
-        $allowed_pages = ['/system/pages/zlecenia/', '/system/pages/header/zmiana_hasla/', '/system/pages/zlecenia/edytuj.php'];
-$current_page = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-if (!in_array($current_page, $allowed_pages)) {
- 
-    header("Location: ../zlecenia");
-    exit();
-}
-        
 
+        $allowed_pages = ['/system/pages/zlecenia/', '/system/pages/header/zmiana_hasla/', '/system/pages/zlecenia/edytuj.php'];
+        $current_page = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        if (!in_array($current_page, $allowed_pages)) {
+
+            header("Location: ../zlecenia");
+            exit();
+        }
     }
 
     ?>

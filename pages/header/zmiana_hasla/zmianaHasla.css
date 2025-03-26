@@ -1,7 +1,8 @@
-h1{
+h1 {
     color: white;
 }
-.changePass-container{
+
+.changePass-container {
     min-width: 95vw;
     height: 100%;
     display: flex;

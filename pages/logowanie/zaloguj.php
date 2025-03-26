@@ -41,7 +41,6 @@ if ($stmt) {
             // Redirect based on user role
             header("location: " . ($_SESSION['uprawnienia'] == 'admin' ? "../panel" : "../zlecenia"));
             exit;
-
         } else {
             $_SESSION['err'] = "Błędne hasło";
         }
@@ -60,4 +59,4 @@ $link->close();
 // Redirect back to login
 header("location: .");
 exit;
-?>
+

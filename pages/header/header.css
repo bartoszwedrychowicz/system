@@ -1,44 +1,45 @@
 .navbar-container {
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-  width: 95vw;
-  height: 10vh;
-  background-color: rgba(0, 141, 212, 0.9);
-  font-size: 2.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  position: sticky;
-  top: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 95vw;
+    height: 10vh;
+    background-color: rgba(0, 141, 212, 0.9);
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
 }
 
 .hover {
-  transition: all 0.2s ease-in-out;
-  position: relative;
-  top: -5px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    top: -5px;
 
 }
-[name="person"]{
-  position: relative;
-  top:3px;
-  margin-left: 1rem;
+
+[name="person"] {
+    position: relative;
+    top: 3px;
+    margin-left: 1rem;
 }
 
 .hover:hover {
-  color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 }
 
 .icon-fix {
-  position: relative;
-  top: -5px;
+    position: relative;
+    top: -5px;
 }
 
-ion-icon{
-  color: white;
+ion-icon {
+    color: white;
 }
 
 .button-container {
-  margin: 1rem;
+    margin: 1rem;
 }

@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $osoba = htmlspecialchars(trim($_POST["osoba"]), ENT_QUOTES, 'UTF-8');
     $telefon = htmlspecialchars(trim($_POST["telefon"]), ENT_QUOTES, 'UTF-8');
     $urzadzenie = htmlspecialchars(trim($_POST["urzadzenie"]), ENT_QUOTES, 'UTF-8');
-    
+
     // Ensure IDs are integers
     $elektronik = intval($_POST["elektronik"]);
     $gwarancja = intval($_POST["gwarancja"]);
-    
+
     // Get current date
     $data = date("Y-m-d");
 
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt) {
         $stmt->bind_param("sssssii", $firma, $osoba, $telefon, $urzadzenie, $data, $gwarancja, $elektronik);
-        
+
         if ($stmt->execute()) {
             $_SESSION['err'] = "Zlecenie dodane pomyślnie!";
         } else {
@@ -68,4 +68,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: .");
     exit;
 }
-?>

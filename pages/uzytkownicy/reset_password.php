@@ -22,7 +22,7 @@ if ($stmt->execute()) {
     $_SESSION['err'] = "Zresetowano hasło.";
     $stmt->close();
 } else {
-    $_SESSION['err'] = "Błąd podczas resetowania hasła."+$link->error;
+    $_SESSION['err'] = "Błąd podczas resetowania hasła." + $link->error;
 }
 
 // Cleanup
