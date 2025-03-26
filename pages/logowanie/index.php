@@ -40,8 +40,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                             </div>
                             <div class="button-container">
                                 <p class="error"> <?php echo isset($_SESSION['err']) ? $_SESSION['err'] : "";
-                                $_SESSION['err'] = "";
-                                ?>
+                                                    $_SESSION['err'] = "";
+                                                    ?>
                                 </p>
                                 <button type="submit" class="guzik">Zaloguj się</button>
                             </div>

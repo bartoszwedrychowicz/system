@@ -60,4 +60,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo $_SESSION['err'];
     die("Nieprawidłowe żądanie.");
 }
-?>
